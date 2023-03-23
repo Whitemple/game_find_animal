@@ -4,7 +4,7 @@
   "description": "Игра \"Найди живтоных\". Небольшая увлекательная игра, где на картинке нужно найти 6 животных. Есть счетчки найденных, кнопка рестарта. Прри ее нажатии фигурки рандомно меняют свое положение, при чем есть ограничения - рыбы только в воде, животные толькг на суше, птицы только в небе. Каждое пойманное животное помещается в сою клетку (рыбы в аквариум, животные и птицы в разные клетки).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "prettier --check . && eslint .",
     "lint:fix": "prettier --write . && eslint . --fix",
     "prepare": "husky install"
@@ -21,11 +21,18 @@
   },
   "homepage": "https://github.com/Whitemple/game_find_animal#readme",
   "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "@types/jest": "^29.5.0",
+    "babel-jest": "^29.5.0",
     "eslint": "^8.36.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.1",
     "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
     "lint-staged": "^13.2.0",
     "prettier": "^2.8.6"
   },
