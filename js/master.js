@@ -3,19 +3,19 @@ window.onload = function () {
 
   let x = 0;
   let y = 0;
-  const animalList = document.querySelectorAll('.item');
-  let searchItems = document.querySelectorAll('.item').length;
-  const box1Clip = document.getElementById('box1_clip');
-  const box1Filter = document.getElementById('box1_filter');
-  const dove = document.getElementById('item1');
-  const swallow = document.getElementById('item2');
-  const fish = document.getElementById('item3');
-  const fish1 = document.getElementById('item4');
-  const fox = document.getElementById('item5');
-  const deer = document.getElementById('item6');
-  const maxItems = document.getElementById('maxItems');
-  const curItems = document.getElementById('curItems');
-  const restart = document.getElementById('restart');
+  const animalList = document.querySelectorAll(".item");
+  let searchItems = document.querySelectorAll(".item").length;
+  const box1Clip = document.getElementById("box1_clip");
+  const box1Filter = document.getElementById("box1_filter");
+  const dove = document.getElementById("item1");
+  const swallow = document.getElementById("item2");
+  const fish = document.getElementById("item3");
+  const fish1 = document.getElementById("item4");
+  const fox = document.getElementById("item5");
+  const deer = document.getElementById("item6");
+  const maxItems = document.getElementById("maxItems");
+  const curItems = document.getElementById("curItems");
+  const restart = document.getElementById("restart");
 
   maxItems.innerHTML = searchItems;
   curItems.innerHTML = searchItems;
@@ -29,32 +29,32 @@ window.onload = function () {
 
   // Запускаем цикл при наведении на элемент и клик
   animalList.forEach((event) => {
-    event.addEventListener('click', (target) => {
+    event.addEventListener("click", (target) => {
       let itemRemove = target.target.id;
       itemRemove = document.getElementById(itemRemove);
       box1Clip.removeChild(itemRemove);
       box1Filter.appendChild(itemRemove);
 
       setTimeout(() => {
-        itemRemove.style.top = '670px';
+        itemRemove.style.top = "670px";
         if (itemRemove === dove) {
-          itemRemove.style.left = '50px';
+          itemRemove.style.left = "50px";
         } else if (itemRemove === swallow) {
-          itemRemove.style.left = '160px';
+          itemRemove.style.left = "160px";
         } else if (itemRemove === fish) {
-          itemRemove.style.left = '280px';
+          itemRemove.style.left = "280px";
         } else if (itemRemove === fish1) {
-          itemRemove.style.left = '420px';
+          itemRemove.style.left = "420px";
         } else if (itemRemove === fox) {
-          itemRemove.style.left = '720px';
+          itemRemove.style.left = "720px";
         } else if (itemRemove === deer) {
-          itemRemove.style.left = '570px';
+          itemRemove.style.left = "570px";
         }
       });
       searchItems -= 1;
       curItems.innerHTML = searchItems;
       if (searchItems === 0) {
-        alert('Вы нашли всех животных');
+        alert("Вы нашли всех животных");
       }
     });
   });
@@ -101,8 +101,8 @@ window.onload = function () {
 
   // Клик по кнопке restart
 
-  restart.addEventListener('click', () => {
-    searchItems = document.querySelectorAll('.item').length;
+  restart.addEventListener("click", () => {
+    searchItems = document.querySelectorAll(".item").length;
     maxItems.innerHTML = searchItems;
     curItems.innerHTML = searchItems;
     restartAllItems();

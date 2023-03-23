@@ -3,21 +3,21 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: 'airbnb-base',
+  extends: ["airbnb-base", "prettier"],
   overrides: [],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
   rules: {
-    'import/prefer-default-export': 'off',
-    'max-len': [
-      'error',
+    "import/prefer-default-export": "off",
+    "max-len": [
+      "error",
       {
         ignoreComments: true,
         ignoreUrls: true,
       },
     ],
-    'import/extensions': [0, { js: 'always' }],
+    "import/extensions": [0, { js: "always" }],
   },
 };
