@@ -1,5 +1,4 @@
 window.onload = function () {
-
   // Инициализация DOM-элементов
 
   let x = 0;
@@ -101,7 +100,7 @@ window.onload = function () {
   };
 
   // Клик по кнопке restart
-  
+
   restart.addEventListener('click', () => {
     searchItems = document.querySelectorAll('.item').length;
     maxItems.innerHTML = searchItems;
