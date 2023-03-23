@@ -1,0 +1,27 @@
+{
+  "name": "game-find-animals",
+  "version": "1.0.0",
+  "description": "Игра \"Найди живтоных\". Небольшая увлекательная игра, где на картинке нужно найти 6 животных. Есть счетчки найденных, кнопка рестарта. Прри ее нажатии фигурки рандомно меняют свое положение, при чем есть ограничения - рыбы только в воде, животные толькг на суше, птицы только в небе. Каждое пойманное животное помещается в сою клетку (рыбы в аквариум, животные и птицы в разные клетки).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Whitemple/game_find_animal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Whitemple/game_find_animal/issues"
+  },
+  "homepage": "https://github.com/Whitemple/game_find_animal#readme",
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
